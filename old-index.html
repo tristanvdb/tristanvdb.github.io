@@ -1,0 +1,227 @@
+<!doctype HTML>
+<html>
+  <head>
+    <meta name="description" content="Tristan Vanderbruggen">
+    <meta name="keywords" content="">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="application-name" content="Tristan Vanderbruggen">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <link rel="stylesheet" href="style.css">
+    <link type='text/css' href='layout.css' rel='stylesheet'>
+    <title>Tristan Vanderbruggen</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="action.js"></script>
+    <script type="text/javascript" src="http://use.typekit.net/aae3miq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    <div id='top' class='anim'>
+      <header class='alignfix center fillwidth clearfont' id='siteHeader'>
+        <a href='#' id='toplink' class='clearfont'>
+          <div id='picture' class='clearfont'></div>
+          <div id='titlebox'>
+            <h1 id='title'>Tristan Vanderbruggen</h1>
+            <h3 id='subtitle'>PhD student at University of Delaware</h3>
+          </div>
+        </a>
+      </header>
+      <nav class='alignfix'>
+        <ul class='single-line'>
+          <li><a href='#research'>Research</a></li>
+          <li><a href='#publications'>Publications</a></li>
+          <li><a href='#contributions'>Contributions</a></li>
+          <li><a href='#education'>Education</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id='main' class='maxwidth alignfix'>
+      <section id='home' class='scrollto'>
+        <div id='headerleft'>
+          <div class='content'>
+            <p>
+In 2010 I had an internship in the ROSE Compiler group at the Lawrence Livermore National Laboratory.
+I learned about source-to-source compilation and its potential.
+I now focus my PhD work on extending the scope of this technology.<br>
+The question that intrigate me is: <em>To what extend can, a source-to-source compiler, be integrated in the workflow of a software engineering team?</em>.
+            </p>
+          </div>
+        </div>
+        <div id='headerright'>
+          <div>
+            <div class='center'>
+              <p class='content'>
+                PhD advisor: <a href="http://www.eecis.udel.edu/~cavazos">John Cavazos</a>
+              </p>
+            </div>
+          </div>
+          <div id='cvlink' class='button'>
+            <div class='center'>
+              <p class='content'>
+                <a href="resources/tristan-vanderbruggen-cv-2014.pdf" class='center link icon-download anim'>Download CV</a>
+              </p>
+            </div>
+          </div>
+          <div id='contactlink' class='button'>
+            <div class='center'>
+              <p class='content'>
+                <a href="#contact" class='center link icon-email anim'>Contact Me</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='research' class='scrollto'>
+        <header><h2>Research</h2></header>
+        <div>
+          <h3>Generation of Optimized Computation Kernels</h3>
+          <p>
+Most applications spend most of there time in loops.
+Researches on how to optimize these compute intensive regions have been ongoing for many years.
+Our approach look at the diversity of <em>computation kernels</em> that can be generated for a given region.
+          </p>
+          <p>
+For this research, we use OpenACC codes as input and generate OpenCL C Kernels.
+The first issue we address is how the compiler can exploit information provided by the develloper to generate many different <em>computation kernels</em>.
+The second issue is to find which <em>computation kernels</em> need to be use in a given situation (including target hardware and workload).
+          </p>
+        </div>
+        <div>
+          <h3>Directives for Source-to-Source Compiler</h3>
+          <p>
+<em>Compiler directive</em> are extremely versatile.
+They range from simple commands (ie. unroll directive) to complete programing model (ie. OpenMP).
+Specifically, we are looking at how <em>compiler directives</em> can be leveraged in a source-to-source environment.
+          </p>
+          <p>
+TODO our approach
+          </p>
+        </div>
+        <div>
+          <h3>Transformation and Generation of Reusable Codes</h3>
+          <p>
+TODO desc
+          </p>
+          <p>
+TODO our approach
+          </p>
+        </div>
+      </section>
+      <section id='publications' class='scrollto'>
+        <header><h2>Publications</h2></header>
+        <div>
+          <h3>Generating OpenCL C kernels from OpenACC</h3>
+          <p>
+TODO
+          </p>
+        </div>
+        <div>
+          <h3>Posters</h3>
+          <ul>
+            <li>CGO 2012</li>
+            <li>WACCPD 14</li>
+          </ul>
+        </div>
+      </section>
+      <section id='contributions' class='scrollto'>
+        <header><h2>Contributions</h2></header>
+        <div>
+          <h3>RoseACC: OpenACC to OpenCL Compiler</h3>
+          <p>
+TODO
+          </p>
+        </div>
+        <div>
+          <h3>Rose Tooling</h3>
+          <p>
+TODO
+          </p>
+        </div>
+        <div>
+          <h3>Tools for ROSE Compiler</h3>
+          <div class='split'>
+            <h4>Directive-based Language eXtension (DLX)</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Kernel from LoopTree (KLT)</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Model-Driven Code Generation (MDCG)</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Multiple File Builder (MFB)</h4>
+            <p>
+TODO
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3>Miscellaneous</h3>
+          <div class='split'>
+            <h4>CUDA in EDG Frontend</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Clang to ROSE Compiler</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Polyhedral Model Framwork</h4>
+            <p>
+TODO
+            </p>
+          </div>
+          <div class='split'>
+            <h4>Binary Analysis using ROSE Compiler</h4>
+            <p>
+TODO
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id='education' class='scrollto'>
+        <header><h2>Education</h2></header>
+        <div class='split'>
+          <h3>University of Delaware</h3>
+          <p>
+TODO
+          </p>
+        </div>
+        <div class='split'>
+          <h3>University of Rennes 1</h3>
+          <p>
+TODO
+          </p>
+        </div>
+      </section>
+      <section id='contact' class='scrollto'>
+        <header><h2>Contact</h2></header>
+        <p>You can contact me at <a href='mailto:vanderbruggentristan@gmail.com'>vanderbruggentristan@gmail.com</a>.</p>
+      </section>
+    </div>
+    <footer class='alignfix center fillwidth' id='contactFooter'>
+      <ul class='single-line anim vcenter' id='contactlist'>
+        <li><a class='icon icon-email' href='mailto:vanderbruggentristan@gmail.com'></a></li>
+        <li><a class='icon icon-linkedin' href='http://lnkd.in/Vdsyur'></a></li>
+        <li><a class='icon icon-github' href='https://www.github.com/tristanvdb'></a></li>
+      </ul>
+    </footer>
+    <footer class='alignfix center fillwidth' id='copyrightFooter'>
+      <large>Website template by <a href='http://www.eecis.udel.edu/~wkillian'>William Killian</a></large>
+    </footer>
+  </body>
+</html>
